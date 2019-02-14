@@ -1,0 +1,7 @@
+target/*
+db.conf
+email.conf
+.idea/*
+*.iml
+codemr/*
+src/test/*

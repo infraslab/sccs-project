@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #00dbff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scs.ui.controllers.AuthController">
+   <children>
+      <Label layoutX="221.0" layoutY="165.0" text="Human Activity Recognition">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="395.0" layoutY="371.0" onKeyPressed="#keyEnterPressedAction" prefHeight="27.0" prefWidth="200.0" />
+      <TextField fx:id="usernameField" layoutX="395.0" layoutY="327.0" onKeyPressed="#keyEnterPressedAction" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="320.0" layoutY="332.0" text="username:" />
+      <Label layoutX="321.0" layoutY="376.0" text="password:" />
+      <Button fx:id="registerButton" layoutX="395.0" layoutY="432.0" mnemonicParsing="false" onAction="#registerAction" text="Register" />
+      <Button fx:id="loginButton" layoutX="536.0" layoutY="432.0" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+      <Button fx:id="forgotButton" layoutX="431.0" layoutY="493.0" mnemonicParsing="false" onAction="#forgotAction" text="Forgot password?" />
+      <Label fx:id="infoLabel" layoutX="367.0" layoutY="287.0" prefHeight="27.0" prefWidth="228.0" text="username or password is not correct" textFill="RED" />
+      <TextArea fx:id="debugArea" layoutX="14.0" layoutY="554.0" prefHeight="200.0" prefWidth="1004.0" />
+   </children>
+</Pane>

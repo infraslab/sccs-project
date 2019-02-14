@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #00dbff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scs.ui.controllers.RegisterController">
+   <children>
+      <Label layoutX="250.0" layoutY="14.0" text="Human Activity Recognition">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="117.0" text="Username:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="157.0" text="Password:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="197.0" text="Confirm password:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="277.0" text="Email:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="237.0" text="Phone:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="317.0" text="Address:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="357.0" text="Postal Code:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="397.0" text="Country:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="77.0" layoutY="560.0" mnemonicParsing="false" onAction="#registerAction" text="Confirm">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label fx:id="passwordPolicy" layoutX="15.0" layoutY="646.0" prefHeight="108.0" prefWidth="993.0" />
+      <PasswordField fx:id="passwordField" layoutX="308.0" layoutY="159.0" prefHeight="27.0" prefWidth="400.0" />
+      <TextField fx:id="usernameField" layoutX="308.0" layoutY="119.0" prefHeight="27.0" prefWidth="400.0" />
+      <PasswordField fx:id="cfPasswordField" layoutX="308.0" layoutY="199.0" onKeyPressed="#checkConfirmPassword" prefHeight="27.0" prefWidth="400.0" />
+      <TextField fx:id="phoneField" layoutX="308.0" layoutY="239.0" prefHeight="27.0" prefWidth="400.0" />
+      <TextField fx:id="mailField" layoutX="308.0" layoutY="279.0" prefHeight="27.0" prefWidth="400.0" />
+      <TextField fx:id="addressField" layoutX="308.0" layoutY="319.0" prefHeight="27.0" prefWidth="400.0" />
+      <TextField fx:id="postField" layoutX="308.0" layoutY="359.0" prefHeight="27.0" prefWidth="400.0" />
+      <TextField fx:id="countryField" layoutX="308.0" layoutY="399.0" prefHeight="27.0" prefWidth="400.0" />
+      <TextArea fx:id="debugArea" layoutX="11.0" layoutY="601.0" prefHeight="153.0" prefWidth="1002.0" />
+      <Label layoutX="77.0" layoutY="437.0" text="Secret question 1:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="477.0" text="Secret question 2:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="517.0" text="Secret question 3:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="444.0" text="Quenstion 1" />
+      <Label layoutX="309.0" layoutY="484.0" text="Quenstion 2" />
+      <Label layoutX="309.0" layoutY="524.0" text="Question 3" />
+      <TextField fx:id="ques1Field" layoutX="708.0" layoutY="439.0" prefHeight="27.0" prefWidth="310.0" />
+      <TextField fx:id="ques2Field" layoutX="708.0" layoutY="479.0" prefHeight="27.0" prefWidth="310.0" />
+      <TextField fx:id="ques3Field" layoutX="708.0" layoutY="519.0" prefHeight="27.0" prefWidth="310.0" />
+      <Label fx:id="infoLabel" layoutX="491.0" layoutY="82.0" text="Label" />
+      <Label layoutX="77.0" layoutY="82.0" text="Register for new User">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton1" layoutX="172.0" layoutY="560.0" mnemonicParsing="false" onAction="#cancelRegister" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

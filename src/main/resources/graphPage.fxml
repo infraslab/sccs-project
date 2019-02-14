@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #00dbff;" fx:controller="com.scs.ui.controllers.GraphController">
+   <children>
+      <Label layoutX="238.0" layoutY="8.0" text="Human Activity Recognition">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="accXGraph" layoutX="20.0" layoutY="60.0" prefHeight="200.0" prefWidth="330.0" title="Accelerometer X-axis">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="accYGtaph" layoutX="347.0" layoutY="66.0" prefHeight="200.0" prefWidth="330.0" title="Accelerometer Y-axis">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <LineChart fx:id="accZGraph" layoutX="692.0" layoutY="66.0" prefHeight="200.0" prefWidth="330.0" title="Accelerometer Z-axis">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <LineChart fx:id="accGraph" layoutX="20.0" layoutY="266.0" prefHeight="485.0" prefWidth="991.0" title="Total Acceleration">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
